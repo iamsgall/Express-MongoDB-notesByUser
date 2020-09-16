@@ -1,0 +1,21 @@
+{{#each errors }} {{!-- if exists any errors look over --}}
+<div class="col-md-4 mx-auto">
+    <div class="alert alert-danger alert-dismissible fade show mt-4" role="alert">
+        {{ text }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="close"><span
+                aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
+{{/each}}
+
+{{#if error }} {{!-- if exists any errors look over --}}
+<div class="col-md-4 mx-auto">
+    <div class="alert alert-danger alert-dismissible fade show mt-4" role="alert">
+        {{ error }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="close"><span
+                aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
+{{/if}}
